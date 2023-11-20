@@ -1,0 +1,194 @@
+* {
+    margin: 5px;
+    padding: 5px;
+}
+
+/*Inicio de configuracion para modo nocturno*/
+#iconoLuna {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1em;
+    color: rgb(180, 126, 126);
+    cursor: pointer;
+    }
+
+#toggle {
+    display: none;
+    }
+
+.modoNoche {
+    background-color: black;
+    transition: all 1.5s ease;
+    color: beige;
+    }
+/*Final de configuracion para modo nocturno*/
+
+
+.tituloPrincipal { /*Titulo*/
+    margin-top: 10px;
+    color: rgb(231, 123, 51);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}*
+
+#subtituloPrincipal { /*Subtitulo*/
+    color: rgb(137, 96, 165);
+    text-align: center;
+}
+
+/*Barra de navegacion*/
+fieldset{
+    background-color: rgb(18, 60, 83);
+    margin: 15px;
+}
+
+#barraNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: larger;
+    font-weight: bold;
+    list-style-type: none;
+    color: rgb(33, 33, 97);
+    background-color: rgb(202, 202, 165);
+    border: solid 2px;
+}
+
+a{
+    text-decoration: none;
+    margin: 10px;
+}
+/*Fin barra de navegacion*/
+
+
+#centradoNov{ /*Cuerpo pagina inicio*/
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+footer{ /*Pie de pagina*/
+    margin-top: 10px;
+    border: solid 3px bisque;
+    text-align: center;
+}
+
+footer h2{ /*Titulo pie de pagina*/
+    color: rgb(101, 103, 226);
+    text-align: center;
+    margin: 15px;
+}
+
+
+/*Pestaña CELULARES*/
+body main section article img{ /*Imagenes de marca de celulares, en pagina "celulares"*/
+    width: 300px;
+    margin: 25px;
+}
+
+main section{ /*Cajas de marcas de celulares separadas por secciones de tres c/u, en pagina "celulares"*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+}
+
+h3{ /*Texto titulo de cada marca, en pagina "celulares"*/
+    color: rgb(154, 135, 222);
+    text-align: center;
+}
+/*Fin pestaña CELULARES*/
+
+/*Pestañas en mantenimiento*/
+.botonVolver{
+    list-style-type: none;
+    color: rgb(28, 28, 37);
+    background-color: rgb(255, 160, 77);
+    border: solid 2px;
+    text-decoration: none;
+}
+
+.tituloImportante{
+    color: red;
+    text-align: center;
+}
+
+.parrafoImportante{
+    text-align: center;
+}
+
+.disculpasImportante{
+    text-align: center;
+    color: rgb(221, 35, 35);
+
+}
+/*Fin de pestañas en mantenimiento*/
+
+
+/*Pestaña de REGISTRO*/
+#formRegistro{
+    background-color: bisque;
+    text-align: center;
+}
+/*Fin de pestaña de REGISTRO*/
+
+
+/*Pestaña de INGRESO*/
+#formIngreso{
+    background-color: bisque;
+    text-align: center;
+}
+/*Fin de pestaña de INGRESO*/
+
+
+/*Responsive*/
+@media (max-width: 320px){ 
+    h1{ /*Titulo/Responsive*/
+        font-size: 25px;
+    }
+    
+    h6{ /*Subtitulo/Responsive*/
+        font-size: 10px;
+    }
+
+    /*Barra de navegacion/Responsive*/
+    nav ul{ 
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    nav ul li{ 
+        margin-right: 35px;
+    }
+    /*Fin barra de navegacion/Responsive*/
+
+    main section{/*Contenido - marcas de celulares/Responsive*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body main section article img{ /*Imagenes marcas celulares/Responsive*/
+        width: 70%;
+        height: 70%;
+        margin: 25px;
+    }
+
+    /*Contenido inicio/Responsive*/
+    iframe{
+        width: 50%;
+        height: 25%;
+        margin: 10px;
+    }
+
+    h4{ 
+        font-size: 10px;
+        text-align: center;
+    }
+}
+    /*Fin contenido inicio/Responsive*/
+/*Fin responsive*/
